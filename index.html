@@ -9,11 +9,64 @@
 </head>
 
 <body>
-    <header>
-        <h1 class="text-3xl font-bold underline">
-            Hello world!
-        </h1>
+    <header class="bg-black fixed top-0 w-full z-10 border-b border-gray-800">
+        <div class="max-w-7xl lg:mx-auto mx-5 h-15 flex items-center justify-between text-white">
+            <div class="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                <h1>Portfolio</h1>
+            </div>
+            <nav
+                class="md:w-auto w-[90%] duration-500 md:h-auto h-screen md:static fixed top-15 left-full md:p-0 p-5 md:bg-transparent bg-[#003253]">
+                <ul class="flex md:flex-row flex-col gap-10 text-xl">
+                    <li><a href="" class="hover:text-[#6656f1]">Home</a></li>
+                    <li><a href="" class="hover:text-[#6656f1]">About</a></li>
+                    <li><a href="" class="hover:text-[#6656f1]">Projects</a></li>
+                    <li><a href="" class="hover:text-[#6656f1]">Skills</a></li>
+                    <li><a href="" class="hover:text-[#6656f1]">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="menuIcon" class="menu text-2xl md:hidden block cursor-pointer">☰</button>
+        </div>
     </header>
+    <main class="bg-black">
+        <div class="max-w-7xl mx-auto pt-[60px]">
+            <div class="text-center py-[50px] mx-5">
+                <h1 class="lg:text-7xl text-5xl text-white font-bold mb-5">Hi, I'am</h1>
+                <h1
+                    class="lg:text-7xl text-5xl font-bold bg-gradient-to-r from-cyan-400 to-violet-500 bg-clip-text text-transparent mb-10">
+                    Aryan Pounikar
+                </h1>
+                <h2 class="text-gray-300 text-3xl mb-10">Creative Developer & Designer</h2>
+                <p class="text-gray-400 text-xl mb-5">Crafting beautiful digital experiences with modern web
+                    technologies</p>
+                <button
+                    class="bg-gradient-to-r from-cyan-400 to-blue-500 px-7 py-2 rounded-3xl m-10 text-white font-bold hover:shadow-lg hover:shadow-cyan-500/50 transition-transform duration-300 hover:scale-110 ">
+                    View My Work
+                    <img src="/asset/rightArow.svg" alt="right arrow" class="invert inline-block">
+                </button>
+                <button
+                    class="border-2 border-gray-300 px-7 py-2 text-white font-bold rounded-3xl hover:bg-gray-900 hover:scale-110 transition-transform duration-300">
+                    Get In Touch
+                </button>
+                <a href="/My_Resume.pdf" download class="text-white border-2 p-3 ml-7 rounded-3xl">Download Resume</a>
+                <div class="invert flex item-center justify-center gap-7 mt-8">
+                    <div>
+                        <img src="/asset/github.svg" alt="github"
+                            class="hover:-translate-y-2 hover:scale-130 transition-transform duration-300 cursor-pointer">
+                    </div>
+                    <div>
+                        <img src="/asset/linkdin.svg" alt="linkdin"
+                            class="hover:-translate-y-2 hover:scale-130 transition-transform duration-300 cursor-pointer">
+                    </div>
+                    <div>
+                        <img src="/asset/mail.svg" alt="mail"
+                            class="hover:-translate-y-2 hover:scale-130 transition-transform duration-300 cursor-pointer">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
 </body>
 
 </html>
