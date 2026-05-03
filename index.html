@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio.com</title>
-    <link href="src/output.css" rel="stylesheet">
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
-    <header class="bg-black fixed top-0 w-full z-10 border-b border-gray-800">
-        <div class="max-w-7xl lg:mx-auto mx-5 h-15 flex items-center justify-between text-white">
+    <header class="bg-black fixed top-0 w-full h-[60px] p-3 z-10 border-b border-gray-600">
+        <div class="max-w-7xl lg:mx-auto mx-5 flex items-center justify-between text-white">
             <div class="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
                 <h1>Portfolio</h1>
             </div>
             <nav
-                class="md:w-auto w-[90%] duration-500 md:h-auto h-screen md:static fixed top-15 left-full md:p-0 p-5 md:bg-transparent bg-[#003253]">
+                class="md:w-auto w-[80%] duration-500 md:h-auto h-screen md:static fixed top-[60px] -left-full md:p-0 p-5 md:bg-transparent bg-[#003253]">
                 <ul class="flex md:flex-row flex-col gap-10 text-xl">
                     <li><a href="" class="hover:text-[#6656f1]">Home</a></li>
                     <li><a href="" class="hover:text-[#6656f1]">About</a></li>
@@ -24,7 +25,8 @@
                     <li><a href="" class="hover:text-[#6656f1]">Contact</a></li>
                 </ul>
             </nav>
-            <button id="menuIcon" class="menu text-2xl md:hidden block cursor-pointer">☰</button>
+            <button id="menuIcon" class="menu text-2xl md:hidden block cursor-pointer"><i class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </header>
     <main class="bg-black">
@@ -38,28 +40,213 @@
                 <h2 class="text-gray-300 text-3xl mb-10">Creative Developer & Designer</h2>
                 <p class="text-gray-400 text-xl mb-5">Crafting beautiful digital experiences with modern web
                     technologies</p>
-                <button
-                    class="bg-gradient-to-r from-cyan-400 to-blue-500 px-7 py-2 rounded-3xl m-10 text-white font-bold hover:shadow-lg hover:shadow-cyan-500/50 transition-transform duration-300 hover:scale-110 ">
-                    View My Work
-                    <img src="/asset/rightArow.svg" alt="right arrow" class="invert inline-block">
-                </button>
-                <button
-                    class="border-2 border-gray-300 px-7 py-2 text-white font-bold rounded-3xl hover:bg-gray-900 hover:scale-110 transition-transform duration-300">
+                <div class="my-10 flex md:flex-row flex-col gap-10 items-center justify-center">
+                    <button
+                        class="bg-gradient-to-r from-cyan-400 to-blue-500 px-7 py-2 rounded-3xl text-white font-bold hover:shadow-lg hover:shadow-cyan-500/50 transition-transform duration-300 hover:scale-110 ">
+                        View My Work
+                        <img src="/asset/rightArow.svg" alt="right arrow" class="invert inline-block">
+                    </button>
+                    <button
+                        class="border-2 border-gray-300 px-7 py-2 text-white font-bold rounded-3xl hover:bg-gray-900 hover:scale-110 transition-transform duration-300">
+                        Get In Touch
+                    </button>
+                    <a href="/My_Resume.pdf" download
+                        class="text-white font-bold border-2 px-7 py-2 rounded-3xl hover:scale-110 transition-transform duration-300">Download
+                        Resume</a>
+                </div>
+
+                <div class="invert flex items-center justify-center gap-7 mt-8">
+                    <div>
+                        <a href="https://github.com/aryan-frontend"><img src="/asset/github.svg" alt="github"
+                                class="hover:-translate-y-2 hover:scale-130 transition-transform duration-300 cursor-pointer"></a>
+                    </div>
+                    <div>
+                        <a href="https://linkedin.com/in/aryan-pounikar-40a617315">
+                            <img src="/asset/linkdin.svg" alt="linkdin"
+                                class="hover:-translate-y-2 hover:scale-130 transition-transform duration-300 cursor-pointer"></a>
+                    </div>
+                    <div>
+                        <a href="mailto:pounikararyan@gmail.com">
+                            <img src="/asset/mail.svg" alt="mail"
+                                class="hover:-translate-y-2 hover:scale-130 transition-transform duration-300 cursor-pointer"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mx-5 py-[50px]">
+                <h1
+                    class="lg:text-5xl text-3xl text-center font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                    About me
+                </h1>
+                <div class="text-white flex  items-center justify-center gap-10 p-5 mt-[20px]">
+                    <div class="max-w-2xl lg:text-start text-center">
+                        <p>I am a dedicated Frontend Developer specializing in creating responsive, high-performance,
+                            and
+                            visually engaging web interfaces. With a strong foundation in HTML, CSS, JavaScript, and
+                            modern
+                            UI frameworks, I transform designs into functional, interactive experiences. I focus on
+                            clean
+                            code, accessibility, and performance optimization to deliver seamless user experiences
+                            across
+                            all screen sizes.</p>
+                    </div>
+                    <div class="w-[500px] h-[300px]">
+                        <img src="/asset/profile_photo.jpg" alt="" class="rounded-full">
+                    </div>
+                </div>
+                <div class="grid lg:grid-cols-3 grid-cols-1 gap-7 mt-[70px]">
+                    <div
+                        class="text-white border-2 border-gray-800 hover:border-blue-900 p-7 rounded-3xl hover:-translate-y-[10px] transition-transform duration-1000">
+                        <div
+                            class="h-12 w-12 flex bg-gradient-to-r from-cyan-400 to-blue-500 p-2 rounded-xl hover:rotate-[360deg] transition-transform duration-500">
+                            <img src="/asset/code.svg" alt="code" class="invert">
+                        </div>
+                        <h1 class="my-3 font-bold text-xl">Clean Code</h1>
+                        <p class="text-gray-400">Writing maintainable and scalable code with best practices</p>
+                    </div>
+                    <div
+                        class="text-white border-2 border-gray-800 hover:border-blue-900 p-7 rounded-3xl hover:-translate-y-[10px] transition-transform duration-1000">
+                        <div
+                            class="h-12 w-12 flex bg-gradient-to-r from-cyan-400 to-blue-500 p-2 rounded-xl hover:rotate-[360deg] transition-transform duration-500">
+                            <img src="/asset/design.svg" alt="desigh" class="invert">
+                        </div>
+                        <h1 class="my-3 font-bold text-xl">Modern Design</h1>
+                        <p class="text-gray-400">Creating beautiful interfaces with attention to detail</p>
+                    </div>
+                    <div
+                        class="text-white border-2 border-gray-800 hover:border-blue-900 p-7 rounded-3xl hover:-translate-y-[10px] transition-transform duration-1000">
+                        <div
+                            class="h-12 w-12 flex bg-gradient-to-r from-cyan-400 to-blue-500 p-2 rounded-xl hover:rotate-[360deg] transition-transform duration-500">
+                            <img src="/asset/bold.svg" alt="bold" class="invert">
+                        </div>
+                        <h1 class="my-3 font-bold text-xl">Fast Performance</h1>
+                        <p class="text-gray-400">Optimizing for speed and user experience</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--------- projects ----------->
+            <section>
+                <div class="grid md:grid-cols-3 grid-cols-1 gap-10">
+                    <div>
+                        <img src="/asset/eCommerce.png" alt="ecommerce">
+                        <h3>ShopHub - E-commerce Website</h3>
+                        <p>
+
+                        </p>
+                        <button></button>
+                        <button></button>
+                    </div>
+                    <div>
+                        <img src="/asset/todoList.png" alt="">
+                    </div>
+                    <div>
+                        <img src="/asset/tic_tac_toe.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <!--------- Skills ------------->
+            <div class="mx-5 py-[50px]">
+                <h1
+                    class="lg:text-5xl text-3xl text-center font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                    Skills & Experties
+                </h1>
+                <div class="grid lg:grid-cols-3 grid-cols-1 gap-7 mt-[70px]">
+                    <div
+                        class="text-white border-2 border-gray-800 hover:border-blue-900 p-5 rounded-3xl hover:-translate-y-[10px] transition-transform duration-1000">
+                        <h2
+                            class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent text-2xl font-bold mb-5">
+                            Frontend</h2>
+                        <button class="border-2 border-blue-900 px-3 py-1 rounded-xl m-1 ">HTML</button>
+                        <button class="border-2 border-blue-900 px-3 py-1 rounded-xl m-1 ">CSS</button>
+                        <button class="border-2 border-blue-900 px-3 py-1 rounded-xl m-1 ">JavaScript</button>
+                        <button class="border-2 border-blue-900 px-3 py-1 rounded-xl m-1 ">Tailwind CSS</button>
+                    </div>
+                    <div
+                        class="text-white border-2 border-gray-800 hover:border-blue-900 p-5 rounded-3xl hover:-translate-y-[10px] transition-transform duration-1000">
+                        <h2
+                            class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent text-2xl font-bold mb-5">
+                            Tools & Others</h2>
+                        <button class="border-2 border-blue-900 px-3 py-1 rounded-xl m-1">Figma AI</button>
+                        <button class="border-2 border-blue-900 px-3 py-1 rounded-xl m-1">Git GitHub</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--------- Contact ------------->
+            <div class="mx-5 py-[50px]">
+                <h1
+                    class="lg:text-5xl text-3xl text-center font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-5">
                     Get In Touch
-                </button>
-                <a href="/My_Resume.pdf" download class="text-white border-2 p-3 ml-7 rounded-3xl">Download Resume</a>
-                <div class="invert flex item-center justify-center gap-7 mt-8">
-                    <div>
-                        <img src="/asset/github.svg" alt="github"
-                            class="hover:-translate-y-2 hover:scale-130 transition-transform duration-300 cursor-pointer">
+                </h1>
+                <p class="text-gray-400 text-center mb-10">Have a project in mind or want to collaborate? Feel free
+                    to reach out!</p>
+                <div class="grid lg:grid-cols-2 grid-cols-1 gap-[50px] mt-[70px] items-center">
+                    <div class="text-white">
+                        <h1 class="font-bold text-xl mb-5">
+                            Let's create something amazing together
+                        </h1>
+                        <p class="text-gray-400">
+                            I'm always excited to work on new projects and collaborate with creative people.
+                            Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                        </p>
+                        <div class="flex items-center gap-3 mt-8 p-3 rounded-xl border border-transparent
+                                         hover:border-blue-800 hover:translate-x-2
+                                         transition-all duration-500 cursor-pointer">
+                            <div class="w-12 h-12 bg-gradient-to-r from-cyan-400 to-blue-500
+                                         flex items-center justify-center rounded-xl">
+                                <img src="/asset/mail.svg" alt="mail" class="invert" />
+                            </div>
+                            <div>
+                                <h2 class="font-semibold">Email</h2>
+                                <p class="text-gray-400">pounikararyan@gmail.com</p>
+                            </div>
+                        </div>
+                        <a class="flex items-center gap-3 mt-8 p-3 rounded-xl border border-transparent
+                                         hover:border-blue-800 hover:translate-x-2
+                                         transition-all duration-500 cursor-pointer">
+                            <div class="w-12 h-12 bg-gradient-to-r from-cyan-400 to-blue-500
+                                         flex items-center justify-center rounded-xl">
+                                <img src="/asset/linkdin.svg" alt="mail" class="invert" />
+                            </div>
+                            <div>
+                                <h2 class="font-semibold">Linkdin</h2>
+                                <p class="text-gray-400">pounikararyan@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="https://github.com/aryan-frontend" class="flex items-center gap-3 mt-8 p-3 rounded-xl border border-transparent
+                                         hover:border-blue-800 hover:translate-x-2
+                                         transition-all duration-500 cursor-pointer">
+                            <div class="w-12 h-12 bg-gradient-to-r from-cyan-400 to-blue-500
+                                         flex items-center justify-center rounded-xl">
+                                <img src="/asset/github.svg" alt="mail" class="invert" />
+                            </div>
+                            <div>
+                                <h2 class="font-semibold">Github</h2>
+                                <p class="text-gray-400">aryan-frontend</p>
+                            </div>
+
+                        </a>
                     </div>
-                    <div>
-                        <img src="/asset/linkdin.svg" alt="linkdin"
-                            class="hover:-translate-y-2 hover:scale-130 transition-transform duration-300 cursor-pointer">
-                    </div>
-                    <div>
-                        <img src="/asset/mail.svg" alt="mail"
-                            class="hover:-translate-y-2 hover:scale-130 transition-transform duration-300 cursor-pointer">
+                    <div class="bg-[001F3D] p-5  text-white border-1 border-gray-800 rounded-xl">
+                        <div class="flex flex-col gap-1">
+                            <label for="">Name</label>
+                            <input type="text" name="" id=""
+                                class="bg-[#213448] p-2 border-1 border-gray-800 rounded-xl ">
+                        </div>
+                        <div class="flex flex-col gap-1 mt-4">
+                            <label for="">Email</label>
+                            <input type="Email" name="" id=""
+                                class="bg-[#213448] p-2 border-1 border-gray-800 rounded-xl">
+                        </div>
+                        <div class="flex flex-col gap-1 mt-4 ">
+                            <label for="">Message</label>
+                            <input type="text"
+                                class="bg-[#213448] pb-15 px-2 text-white border-1 border-gray-800 rounded-xl">
+                        </div>
+                        <button class="bg-gradient-to-r from-cyan-400 to-blue-500 w-full mt-15 rounded-xl py-2 hover:shadow-lg hover:shadow-cyan-500/50
+                                transition-transform duration-300 hover:scale-102 ">Send
+                            Message</button>
                     </div>
                 </div>
             </div>
@@ -68,5 +255,6 @@
 
     </main>
 </body>
+<script src="/script.js"></script>
 
 </html>
