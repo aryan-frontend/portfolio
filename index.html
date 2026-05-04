@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio.com</title>
     <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
-    <header class="bg-black fixed top-0 w-full h-[60px] p-3 z-10 border-b border-gray-600">
+    <header class="bg-black fixed top-0 w-full h-16 p-3 z-10 border-b border-gray-600">
         <div class="max-w-7xl lg:mx-auto mx-5 flex items-center justify-between text-white">
-            <div class="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            <div class="text-2xl font-bold gradient-text">
                 <h1>Portfolio</h1>
             </div>
             <nav
@@ -34,7 +35,7 @@
             <div class="text-center py-[50px] mx-5">
                 <h1 class="lg:text-7xl text-5xl text-white font-bold mb-5">Hi, I'am</h1>
                 <h1
-                    class="lg:text-7xl text-5xl font-bold bg-gradient-to-r from-cyan-400 to-violet-500 bg-clip-text text-transparent mb-10">
+                    class="lg:text-7xl text-5xl font-bold gradient-text mb-10">
                     Aryan Pounikar
                 </h1>
                 <h2 class="text-gray-300 text-3xl mb-10">Creative Developer & Designer</h2>
@@ -42,7 +43,7 @@
                     technologies</p>
                 <div class="my-10 flex md:flex-row flex-col gap-10 items-center justify-center">
                     <button
-                        class="bg-gradient-to-r from-cyan-400 to-blue-500 px-7 py-2 rounded-3xl text-white font-bold hover:shadow-lg hover:shadow-cyan-500/50 transition-transform duration-300 hover:scale-110 ">
+                        class="gradient-bg px-7 py-2 rounded-3xl text-white font-bold hover:shadow-lg hover:shadow-cyan-500/50 transition-transform duration-300 hover:scale-110 ">
                         View My Work
                         <img src="/asset/rightArow.svg" alt="right arrow" class="invert inline-block">
                     </button>
@@ -75,48 +76,52 @@
 
             <div class="mx-5 py-[50px]">
                 <h1
-                    class="lg:text-5xl text-3xl text-center font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                    class="lg:text-5xl text-3xl text-center font-bold gradient-text">
                     About me
                 </h1>
-                <div class="text-white flex  items-center justify-center gap-10 p-5 mt-[20px]">
-                    <div class="max-w-2xl lg:text-start text-center">
-                        <p>I am a dedicated Frontend Developer specializing in creating responsive, high-performance,
-                            and
-                            visually engaging web interfaces. With a strong foundation in HTML, CSS, JavaScript, and
-                            modern
-                            UI frameworks, I transform designs into functional, interactive experiences. I focus on
-                            clean
-                            code, accessibility, and performance optimization to deliver seamless user experiences
-                            across
-                            all screen sizes.</p>
+                <div class="text-white flex flex-col lg:flex-row items-center justify-center gap-10 p-5 mt-6">
+
+                    <div class="max-w-2xl text-center lg:text-left">
+                        <p>
+                            I am a dedicated Frontend Developer specializing in creating responsive, high-performance,
+                            and visually engaging web interfaces. With a strong foundation in HTML, CSS, JavaScript,
+                            and modern UI frameworks, I transform designs into functional, interactive experiences.
+                            I focus on clean code, accessibility, and performance optimization to deliver seamless
+                            user experiences across all screen sizes.
+                        </p>
+
+                        <button>demo</button>
                     </div>
-                    <div class="w-[500px] h-[300px]">
-                        <img src="/asset/profile_photo.jpg" alt="" class="rounded-full">
+
+                    <div class="w-75 h-75">
+                        <img src="/asset/profile_photo.jpg" alt="profile"
+                            class="rounded-full w-full h-full object-cover">
                     </div>
+
                 </div>
                 <div class="grid lg:grid-cols-3 grid-cols-1 gap-7 mt-[70px]">
                     <div
-                        class="text-white border-2 border-gray-800 hover:border-blue-900 p-7 rounded-3xl hover:-translate-y-[10px] transition-transform duration-1000">
+                        class="text-white border-2 border-gray-800 hover:border-blue-900 p-7 rounded-3xl hover:-translate-y-4 transition-transform duration-1000">
                         <div
-                            class="h-12 w-12 flex bg-gradient-to-r from-cyan-400 to-blue-500 p-2 rounded-xl hover:rotate-[360deg] transition-transform duration-500">
+                            class="h-12 w-12 flex gradient-bg p-2 rounded-xl hover:rotate-360 transition-transform duration-500">
                             <img src="/asset/code.svg" alt="code" class="invert">
                         </div>
                         <h1 class="my-3 font-bold text-xl">Clean Code</h1>
                         <p class="text-gray-400">Writing maintainable and scalable code with best practices</p>
                     </div>
                     <div
-                        class="text-white border-2 border-gray-800 hover:border-blue-900 p-7 rounded-3xl hover:-translate-y-[10px] transition-transform duration-1000">
+                        class="text-white border-2 border-gray-800 hover:border-blue-900 p-7 rounded-3xl hover:-translate-y-4 transition-transform duration-1000">
                         <div
-                            class="h-12 w-12 flex bg-gradient-to-r from-cyan-400 to-blue-500 p-2 rounded-xl hover:rotate-[360deg] transition-transform duration-500">
+                            class="h-12 w-12 flex gradient-bg p-2 rounded-xl hover:rotate-360 transition-transform duration-500">
                             <img src="/asset/design.svg" alt="desigh" class="invert">
                         </div>
                         <h1 class="my-3 font-bold text-xl">Modern Design</h1>
                         <p class="text-gray-400">Creating beautiful interfaces with attention to detail</p>
                     </div>
                     <div
-                        class="text-white border-2 border-gray-800 hover:border-blue-900 p-7 rounded-3xl hover:-translate-y-[10px] transition-transform duration-1000">
+                        class="text-white border-2 border-gray-800 hover:border-blue-900 p-7 rounded-3xl hover:-translate-y-4 transition-transform duration-1000">
                         <div
-                            class="h-12 w-12 flex bg-gradient-to-r from-cyan-400 to-blue-500 p-2 rounded-xl hover:rotate-[360deg] transition-transform duration-500">
+                            class="h-12 w-12 flex gradient-bg p-2 rounded-xl hover:rotate-360 transition-transform duration-500">
                             <img src="/asset/bold.svg" alt="bold" class="invert">
                         </div>
                         <h1 class="my-3 font-bold text-xl">Fast Performance</h1>
@@ -126,13 +131,17 @@
             </div>
 
             <!--------- projects ----------->
-            <section>
-                <div class="grid md:grid-cols-3 grid-cols-1 gap-10">
-                    <div>
+            <section class="mx-5 py-[50px]">
+                <h1
+                    class="lg:text-5xl text-3xl text-center font-bold gradient-text">
+                    About me
+                </h1>
+                <div class="grid md:grid-cols-3 grid-cols-1 gap-10 text-white mt-6 p-5">
+                    <div class="border-2 border-gray-800 hover:border-blue-900  rounded-3xl">
                         <img src="/asset/eCommerce.png" alt="ecommerce">
                         <h3>ShopHub - E-commerce Website</h3>
                         <p>
-
+                            A fully responsive eCommerce website designed to deliver a seamless online shopping experience. It includes product listings, filtering, cart functionality, and a smooth checkout interface. Built using modern frontend technologies, the platform focuses on performance, usability, and clean UI design.
                         </p>
                         <button></button>
                         <button></button>
@@ -148,14 +157,14 @@
             <!--------- Skills ------------->
             <div class="mx-5 py-[50px]">
                 <h1
-                    class="lg:text-5xl text-3xl text-center font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                    class="lg:text-5xl text-3xl text-center font-bold gradient-text">
                     Skills & Experties
                 </h1>
                 <div class="grid lg:grid-cols-3 grid-cols-1 gap-7 mt-[70px]">
                     <div
-                        class="text-white border-2 border-gray-800 hover:border-blue-900 p-5 rounded-3xl hover:-translate-y-[10px] transition-transform duration-1000">
+                        class="text-white border-2 border-gray-800 hover:border-blue-900 p-5 rounded-3xl hover:-translate-y-4 transition-transform duration-1000">
                         <h2
-                            class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent text-2xl font-bold mb-5">
+                            class="gradient-text text-2xl font-bold mb-5">
                             Frontend</h2>
                         <button class="border-2 border-blue-900 px-3 py-1 rounded-xl m-1 ">HTML</button>
                         <button class="border-2 border-blue-900 px-3 py-1 rounded-xl m-1 ">CSS</button>
@@ -163,9 +172,9 @@
                         <button class="border-2 border-blue-900 px-3 py-1 rounded-xl m-1 ">Tailwind CSS</button>
                     </div>
                     <div
-                        class="text-white border-2 border-gray-800 hover:border-blue-900 p-5 rounded-3xl hover:-translate-y-[10px] transition-transform duration-1000">
+                        class="text-white border-2 border-gray-800 hover:border-blue-900 p-5 rounded-3xl hover:-translate-y-4 transition-transform duration-1000">
                         <h2
-                            class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent text-2xl font-bold mb-5">
+                            class="gradient-text text-2xl font-bold mb-5">
                             Tools & Others</h2>
                         <button class="border-2 border-blue-900 px-3 py-1 rounded-xl m-1">Figma AI</button>
                         <button class="border-2 border-blue-900 px-3 py-1 rounded-xl m-1">Git GitHub</button>
@@ -176,12 +185,12 @@
             <!--------- Contact ------------->
             <div class="mx-5 py-[50px]">
                 <h1
-                    class="lg:text-5xl text-3xl text-center font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-5">
+                    class="lg:text-5xl text-3xl text-center font-bold gradient-text mb-5">
                     Get In Touch
                 </h1>
                 <p class="text-gray-400 text-center mb-10">Have a project in mind or want to collaborate? Feel free
                     to reach out!</p>
-                <div class="grid lg:grid-cols-2 grid-cols-1 gap-[50px] mt-[70px] items-center">
+                <div class="grid lg:grid-cols-2 grid-cols-1 gap-12 mt-[70px] items-center">
                     <div class="text-white">
                         <h1 class="font-bold text-xl mb-5">
                             Let's create something amazing together
@@ -193,7 +202,7 @@
                         <div class="flex items-center gap-3 mt-8 p-3 rounded-xl border border-transparent
                                          hover:border-blue-800 hover:translate-x-2
                                          transition-all duration-500 cursor-pointer">
-                            <div class="w-12 h-12 bg-gradient-to-r from-cyan-400 to-blue-500
+                            <div class="w-12 h-12 gradient-bg
                                          flex items-center justify-center rounded-xl">
                                 <img src="/asset/mail.svg" alt="mail" class="invert" />
                             </div>
@@ -205,7 +214,7 @@
                         <a class="flex items-center gap-3 mt-8 p-3 rounded-xl border border-transparent
                                          hover:border-blue-800 hover:translate-x-2
                                          transition-all duration-500 cursor-pointer">
-                            <div class="w-12 h-12 bg-gradient-to-r from-cyan-400 to-blue-500
+                            <div class="w-12 h-12 gradient-bg
                                          flex items-center justify-center rounded-xl">
                                 <img src="/asset/linkdin.svg" alt="mail" class="invert" />
                             </div>
@@ -217,7 +226,7 @@
                         <a href="https://github.com/aryan-frontend" class="flex items-center gap-3 mt-8 p-3 rounded-xl border border-transparent
                                          hover:border-blue-800 hover:translate-x-2
                                          transition-all duration-500 cursor-pointer">
-                            <div class="w-12 h-12 bg-gradient-to-r from-cyan-400 to-blue-500
+                            <div class="w-12 h-12 gradient-bg
                                          flex items-center justify-center rounded-xl">
                                 <img src="/asset/github.svg" alt="mail" class="invert" />
                             </div>
@@ -228,23 +237,23 @@
 
                         </a>
                     </div>
-                    <div class="bg-[001F3D] p-5  text-white border-1 border-gray-800 rounded-xl">
+                    <div class="bg-[001F3D] p-5  text-white border border-gray-800 rounded-xl">
                         <div class="flex flex-col gap-1">
                             <label for="">Name</label>
                             <input type="text" name="" id=""
-                                class="bg-[#213448] p-2 border-1 border-gray-800 rounded-xl ">
+                                class="bg-[#213448] p-2 border border-gray-800 rounded-xl ">
                         </div>
                         <div class="flex flex-col gap-1 mt-4">
                             <label for="">Email</label>
                             <input type="Email" name="" id=""
-                                class="bg-[#213448] p-2 border-1 border-gray-800 rounded-xl">
+                                class="bg-[#213448] p-2 border border-gray-800 rounded-xl">
                         </div>
                         <div class="flex flex-col gap-1 mt-4 ">
                             <label for="">Message</label>
                             <input type="text"
-                                class="bg-[#213448] pb-15 px-2 text-white border-1 border-gray-800 rounded-xl">
+                                class="bg-[#213448] pb-15 px-2 text-white border border-gray-800 rounded-xl">
                         </div>
-                        <button class="bg-gradient-to-r from-cyan-400 to-blue-500 w-full mt-15 rounded-xl py-2 hover:shadow-lg hover:shadow-cyan-500/50
+                        <button class="gradient-bg w-full mt-15 rounded-xl py-2 hover:shadow-lg hover:shadow-cyan-500/50
                                 transition-transform duration-300 hover:scale-102 ">Send
                             Message</button>
                     </div>
