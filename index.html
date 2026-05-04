@@ -13,75 +13,73 @@
 <body>
     <header class="bg-black fixed top-0 w-full h-16 p-3 z-10 border-b border-gray-600">
         <div class="max-w-7xl lg:mx-auto  flex items-center justify-between text-white">
-            <div class="text-2xl font-bold gradient-text">
-                <h1>Portfolio</h1>
-            </div>
+            <a href="#home" class="text-2xl font-bold gradient-text">Portfolio</a>
             <nav
-                class="md:w-auto w-[80%] duration-500 md:h-auto h-screen md:static fixed top-[60px] -left-full md:p-0 p-5 md:bg-transparent bg-[#003253]">
+                class="md:w-auto w-[80%] transition-all duration-500 ease-in-out md:h-auto h-full fixed top-16 md:static -left-full md:p-0 p-5 md:bg-transparent bg-[#003253]">
                 <ul class="flex md:flex-row flex-col gap-10 text-xl">
-                    <li><a href="" class="hover:text-[#6656f1]">Home</a></li>
-                    <li><a href="" class="hover:text-[#6656f1]">About</a></li>
-                    <li><a href="" class="hover:text-[#6656f1]">Projects</a></li>
-                    <li><a href="" class="hover:text-[#6656f1]">Skills</a></li>
-                    <li><a href="" class="hover:text-[#6656f1]">Contact</a></li>
+                    <li><a href="#home" class="hover:text-[#6656f1]">Home</a></li>
+                    <li><a href="#about" class="hover:text-[#6656f1]">About</a></li>
+                    <li><a href="#projects" class="hover:text-[#6656f1]">Projects</a></li>
+                    <li><a href="#skills" class="hover:text-[#6656f1]">Skills</a></li>
+                    <li><a href="#contact" class="hover:text-[#6656f1]">Contact</a></li>
                 </ul>
             </nav>
-            <button id="menuIcon" class="menu text-2xl md:hidden block cursor-pointer"><i class="fa-solid fa-bars"></i>
+            <button id="menuIcon" class="text-2xl md:hidden block cursor-pointer" aria-label="Toggle menu"
+                aria-expanded="false"><i class="fa-solid fa-bars"></i>
             </button>
         </div>
     </header>
     <main class="bg-black">
-        <div class="max-w-7xl lg:mx-auto mx-5 pt-[60px]">
-            <div class="text-center py-[50px] ">
-                <h1 class="lg:text-7xl text-5xl text-white font-bold mb-5">Hi, I'am</h1>
-                <h1
-                    class="lg:text-7xl text-5xl font-bold gradient-text mb-10">
+        <div class="max-w-7xl lg:mx-auto px-4 pt-16">
+            <!--------- home ----------->
+            <section id="home" class="text-center py-12 ">
+                <h1 class="lg:text-7xl text-5xl text-white font-bold mb-5 pt-15">Hi, I'm</h1>
+                <h1 class="lg:text-7xl text-5xl font-bold gradient-text mb-10">
                     Aryan Pounikar
                 </h1>
-                <h2 class="text-gray-300 text-3xl mb-10">Creative Developer & Designer</h2>
+                <h2 class="text-gray-300 text-3xl mb-10">Frontend Developer crafting modern UI</h2>
                 <p class="text-gray-400 text-xl mb-5">Crafting beautiful digital experiences with modern web
                     technologies</p>
                 <div class="my-10 flex md:flex-row flex-col gap-10 items-center justify-center">
-                    <button
+                    <a href="#projects"
                         class="gradient-bg px-7 py-2 rounded-3xl text-white font-bold hover:shadow-lg hover:shadow-cyan-500/50 transition-transform duration-300 hover:scale-110 ">
                         View My Work
-                        <img src="/asset/rightArow.svg" alt="right arrow" class="invert inline-block">
-                    </button>
-                    <button
+                        <img src="/asset/rightArrow.svg" alt="right arrow" class="invert inline-block">
+                    </a>
+                    <a href="#contact"
                         class="border-2 border-gray-300 px-7 py-2 text-white font-bold rounded-3xl hover:bg-gray-900 hover:scale-110 transition-transform duration-300">
                         Get In Touch
-                    </button>
-                    <a href="/My_Resume.pdf" download
+                </a>
+                    <a href="/My_Resume.pdf" download target="_blank"
                         class="text-white font-bold border-2 px-7 py-2 rounded-3xl hover:scale-110 transition-transform duration-300">Download
                         Resume</a>
                 </div>
 
                 <div class="invert flex items-center justify-center gap-7 mt-8">
                     <div>
-                        <a href="https://github.com/aryan-frontend"><img src="/asset/github.svg" alt="github"
-                                class="hover:-translate-y-2 hover:scale-130 transition-transform duration-300 cursor-pointer"></a>
+                        <a href="https://github.com/aryan-frontend"><img src="/asset/github.svg" alt="github profile"
+                                class="hover:-translate-y-2 hover:scale-110 transition-transform duration-300 cursor-pointer"></a>
                     </div>
                     <div>
                         <a href="https://linkedin.com/in/aryan-pounikar-40a617315">
-                            <img src="/asset/linkdin.svg" alt="linkdin"
-                                class="hover:-translate-y-2 hover:scale-130 transition-transform duration-300 cursor-pointer"></a>
+                            <img src="/asset/linkedin.svg" alt="linkedin profile"
+                                class="hover:-translate-y-2 hover:scale-110 transition-transform duration-300 cursor-pointer"></a>
                     </div>
                     <div>
                         <a href="mailto:pounikararyan@gmail.com">
-                            <img src="/asset/mail.svg" alt="mail"
-                                class="hover:-translate-y-2 hover:scale-130 transition-transform duration-300 cursor-pointer"></a>
+                            <img src="/asset/mail.svg" alt="gmail account"
+                                class="hover:-translate-y-2 hover:scale-110 transition-transform duration-300 cursor-pointer"></a>
                     </div>
                 </div>
-            </div>
-
-            <div class=" py-[50px]">
-                <h1
-                    class="lg:text-5xl text-3xl text-center font-bold gradient-text">
+            </section>
+            <!--------- About ----------->
+            <section id="about" class=" py-12">
+                <h1 class="lg:text-5xl text-3xl text-center font-bold gradient-text py-5">
                     About me
                 </h1>
-                <div class="text-white flex flex-col lg:flex-row items-center justify-center gap-10 p-5 mt-6">
+                <div class="text-white flex flex-col lg:flex-row items-center justify-center gap-10 p-5 mt-18">
 
-                    <div class="max-w-2xl text-center lg:text-left">
+                    <article class="max-w-2xl text-center lg:text-left">
                         <p>
                             I am a dedicated Frontend Developer specializing in creating responsive, high-performance,
                             and visually engaging web interfaces. With a strong foundation in HTML, CSS, JavaScript,
@@ -89,9 +87,7 @@
                             I focus on clean code, accessibility, and performance optimization to deliver seamless
                             user experiences across all screen sizes.
                         </p>
-
-                        <button>demo</button>
-                    </div>
+                    </article>
 
                     <div class="w-75 h-75">
                         <img src="/asset/profile_photo.jpg" alt="profile"
@@ -99,7 +95,7 @@
                     </div>
 
                 </div>
-                <div class="grid lg:grid-cols-3 grid-cols-1 gap-7 mt-[70px]">
+                <div class="grid lg:grid-cols-3 grid-cols-1 gap-7 mt-18">
                     <div
                         class="text-white border-2 border-gray-800 hover:border-blue-900 p-7 rounded-3xl hover:-translate-y-4 transition-transform duration-1000">
                         <div
@@ -128,67 +124,80 @@
                         <p class="text-gray-400">Optimizing for speed and user experience</p>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <!--------- projects ----------->
-            <section class="py-[50px]">
-                <h1
-                    class="lg:text-5xl text-3xl text-center font-bold gradient-text">
+            <section id="projects" class="py-12">
+                <h1 class="lg:text-5xl text-3xl text-center font-bold gradient-text py-5">
                     Projects
                 </h1>
-                <div class="grid md:grid-cols-3 grid-cols-1 gap-10 text-white mt-6">
-                    <div class="border-2 border-gray-800 hover:border-blue-900  rounded-3xl overflow-hidden hover:-translate-y-4 transition-transform duration-1000">
+                <div class="grid md:grid-cols-3 grid-cols-1 gap-10 text-white mt-18">
+                    <div
+                        class="border-2 border-gray-800 hover:border-blue-900  rounded-3xl overflow-hidden hover:-translate-y-4 transition-transform duration-1000">
                         <img src="/asset/eCommerce.png" alt="ecommerce">
                         <div class="p-4">
                             <h3 class="text-2xl font-bold">ShopHub - E-commerce Website</h3>
-                        <p class="text-gray-400 my-3 text-justify ">
-                            A fully responsive eCommerce website designed to deliver a seamless online shopping experience. It includes product listings, filtering, cart functionality, and a smooth checkout interface. Built using modern frontend technologies, the platform focuses on performance, usability, and clean UI design.
-                        </p>
-                        <a href="https://shophub-dun-six.vercel.app" target="_blank" class="border-2 border-blue-900 px-3 py-1 rounded-xl m-1"><button >Live Demo</button></a>
-                        
-                        <a href="https://github.com/aryan-frontend/shophub" target="_blank" class="border-2 border-blue-900 px-3 py-1 rounded-xl m-1"><button >Code</button></a>
+                            <p class="text-gray-400 my-3 text-justify ">
+                                A fully responsive eCommerce website designed to deliver a seamless online shopping
+                                experience. It includes product listings, filtering, cart functionality, and a smooth
+                                checkout interface. Built using modern frontend technologies, the platform focuses on
+                                performance, usability, and clean UI design.
+                            </p>
+                            <a href="https://shophub-dun-six.vercel.app" target="_blank"
+                                class="border-2 border-blue-900 px-3 py-1 rounded-xl m-1">Live Demo</a>
+
+                            <a href="https://github.com/aryan-frontend/shophub" target="_blank"
+                                class="border-2 border-blue-900 px-3 py-1 rounded-xl m-1">Code</a>
                         </div>
-                        
+
                     </div>
-                    <div class="border-2 border-gray-800 hover:border-blue-900  rounded-3xl overflow-hidden hover:-translate-y-4 transition-transform duration-1000">
+                    <div
+                        class="border-2 border-gray-800 hover:border-blue-900  rounded-3xl overflow-hidden hover:-translate-y-4 transition-transform duration-1000">
                         <img src="/asset/todoList.png" alt="ecommerce">
                         <div class="p-4">
                             <h3 class="text-2xl font-bold">To Do List</h3>
-                        <p class="text-gray-400 my-3 text-justify ">
-                            A simple yet powerful task management application that helps users organize daily activities efficiently. Built with a focus on usability, performance, and persistent data storage.
-                        </p>
-                        <a href="https://to-do-list-ten-pi-56.vercel.app" target="_blank" class="border-2 border-blue-900 px-3 py-1 rounded-xl m-1"><button>Live Demo</button></a>
-                        
-                        <a href="https://github.com/aryan-frontend/ToDo_List" target="_blank" class="border-2 border-blue-900 px-3 py-1 rounded-xl m-1"><button >Code</button></a>
+                            <p class="text-gray-400 my-3 text-justify ">
+                                A simple yet powerful task management application that helps users organize daily
+                                activities efficiently. Built with a focus on usability, performance, and persistent
+                                data storage.
+                            </p>
+                            <a href="https://to-do-list-ten-pi-56.vercel.app" target="_blank"
+                                class="border-2 border-blue-900 px-3 py-1 rounded-xl m-1">Live Demo</a>
+
+                            <a href="https://github.com/aryan-frontend/ToDo_List" target="_blank"
+                                class="border-2 border-blue-900 px-3 py-1 rounded-xl m-1">Code</a>
                         </div>
-                        
+
                     </div>
-                    <div class="border-2 border-gray-800 hover:border-blue-900  rounded-3xl overflow-hidden hover:-translate-y-4 transition-transform duration-1000">
+                    <div
+                        class="border-2 border-gray-800 hover:border-blue-900  rounded-3xl overflow-hidden hover:-translate-y-4 transition-transform duration-1000">
                         <img src="/asset/tic_tac_toe.png" alt="ecommerce">
                         <div class="p-4">
                             <h3 class="text-2xl font-bold">Tic Tac Toe</h3>
-                        <p class="text-gray-400 my-3 text-justify ">
-                            An interactive and responsive Tic Tac Toe game built with a focus on clean UI and smooth user experience. The application allows two players to compete in real-time with instant feedback and game state tracking.
-                        </p>
-                        <a href="https://tic-tac-toe-mocha-nine-57.vercel.app" target="_blank" class="border-2 border-blue-900 px-3 py-1 rounded-xl m-1"><button >Live Demo</button></a>
-                        
-                        <a href="https://github.com/aryan-frontend/tic-tac-toe" target="_blank" class="border-2 border-blue-900 px-3 py-1 rounded-xl m-1"><button >Code</button></a>
+                            <p class="text-gray-400 my-3 text-justify ">
+                                An interactive and responsive Tic Tac Toe game built with a focus on clean UI and smooth
+                                user experience. The application allows two players to compete in real-time with instant
+                                feedback and game state tracking.
+                            </p>
+                            <a href="https://tic-tac-toe-mocha-nine-57.vercel.app" target="_blank"
+                                class="border-2 border-blue-900 px-3 py-1 rounded-xl m-1">Live Demo</a>
+
+                            <a href="https://github.com/aryan-frontend/tic-tac-toe" target="_blank"
+                                class="border-2 border-blue-900 px-3 py-1 rounded-xl m-1">code</a>
                         </div>
-                        
+
                     </div>
                 </div>
             </section>
             <!--------- Skills ------------->
-            <div class=" py-[50px]">
-                <h1
-                    class="lg:text-5xl text-3xl text-center font-bold gradient-text">
+            <section id="skills" class=" py-12">
+                <h1 class="lg:text-5xl text-3xl text-center font-bold gradient-text py-5">
                     Skills & Experties
                 </h1>
-                <div class="grid lg:grid-cols-3 grid-cols-1 gap-7 mt-[70px]">
+                <div class="grid lg:grid-cols-3 grid-cols-1 gap-7 mt-18">
                     <div
                         class="text-white border-2 border-gray-800 hover:border-blue-900 p-5 rounded-3xl hover:-translate-y-4 transition-transform duration-1000">
-                        <h2
-                            class="gradient-text text-2xl font-bold mb-5">
+                        <h2 class="gradient-text text-2xl font-bold mb-5">
                             Frontend</h2>
                         <button class="border-2 border-blue-900 px-3 py-1 rounded-xl m-1 ">HTML</button>
                         <button class="border-2 border-blue-900 px-3 py-1 rounded-xl m-1 ">CSS</button>
@@ -197,24 +206,22 @@
                     </div>
                     <div
                         class="text-white border-2 border-gray-800 hover:border-blue-900 p-5 rounded-3xl hover:-translate-y-4 transition-transform duration-1000">
-                        <h2
-                            class="gradient-text text-2xl font-bold mb-5">
+                        <h2 class="gradient-text text-2xl font-bold mb-5">
                             Tools & Others</h2>
-                       class="border-2 border-blue-900 px-3 py-1 rounded-xl m-1" <button >Figma AI</button>
-                       class="border-2 border-blue-900 px-3 py-1 rounded-xl m-1" <button >Git GitHub</button>
+                        <button class="border-2 border-blue-900 px-3 py-1 rounded-xl m-1">Figma AI</button>
+                        <button class="border-2 border-blue-900 px-3 py-1 rounded-xl m-1">Git GitHub</button>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <!--------- Contact ------------->
-            <div class=" py-[50px]">
-                <h1
-                    class="lg:text-5xl text-3xl text-center font-bold gradient-text mb-5">
+            <section id="contact" class=" py-12">
+                <h1 class="lg:text-5xl text-3xl text-center font-bold gradient-text py-5">
                     Get In Touch
                 </h1>
                 <p class="text-gray-400 text-center mb-10">Have a project in mind or want to collaborate? Feel free
                     to reach out!</p>
-                <div class="grid lg:grid-cols-2 grid-cols-1 gap-12 mt-[70px] items-center">
+                <div class="grid lg:grid-cols-2 grid-cols-1 gap-12 mt-18 items-center">
                     <div class="text-white">
                         <h1 class="font-bold text-xl mb-5">
                             Let's create something amazing together
@@ -240,7 +247,7 @@
                                          transition-all duration-500 cursor-pointer">
                             <div class="w-12 h-12 gradient-bg
                                          flex items-center justify-center rounded-xl">
-                                <img src="/asset/linkdin.svg" alt="mail" class="invert" />
+                                <img src="/asset/linkedin.svg" alt="mail" class="invert" />
                             </div>
                             <div>
                                 <h2 class="font-semibold">Linkdin</h2>
@@ -261,28 +268,29 @@
 
                         </a>
                     </div>
-                    <div class="bg-[001F3D] p-5  text-white border border-gray-800 rounded-xl">
+                    <form class="bg-[001F3D] p-5  text-white border border-gray-800 rounded-xl">
                         <div class="flex flex-col gap-1">
-                            <label for="">Name</label>
-                            <input type="text" name="" id=""
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name"
                                 class="bg-[#213448] p-2 border border-gray-800 rounded-xl ">
                         </div>
                         <div class="flex flex-col gap-1 mt-4">
-                            <label for="">Email</label>
-                            <input type="Email" name="" id=""
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email"
                                 class="bg-[#213448] p-2 border border-gray-800 rounded-xl">
                         </div>
                         <div class="flex flex-col gap-1 mt-4 ">
-                            <label for="">Message</label>
-                            <input type="text"
-                                class="bg-[#213448] pb-15 px-2 text-white border border-gray-800 rounded-xl">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4"
+                                class="bg-[#213448] p-2 border border-gray-800 rounded-xl resize-none"
+                                required></textarea>
                         </div>
-                        <button class="gradient-bg w-full mt-15 rounded-xl py-2 hover:shadow-lg hover:shadow-cyan-500/50
+                        <button type="submit" class="gradient-bg w-full mt-15 rounded-xl py-2 hover:shadow-lg hover:shadow-cyan-500/50
                                 transition-transform duration-300 hover:scale-102 ">Send
                             Message</button>
-                    </div>
+                    </form>
                 </div>
-            </div>
+            </section>
 
         </div>
 
@@ -291,3 +299,6 @@
 <script src="/script.js"></script>
 
 </html>
+
+
+<!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
